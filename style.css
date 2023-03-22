@@ -7,7 +7,7 @@
 
 #screen{
     width: 100%;
-    height: 6000px;
+    height: 10000px;
     /* border: 2px solid black; */
 }
 
@@ -265,4 +265,224 @@
     text-transform: uppercase;
     color: rgb(46,46,46);
 }
+
+#buyimg{
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    margin-bottom: 70px;
+}
+
+#buyimg > div{
+
+    width: 12.5%;
+    height: 200px;
+}
+
+#buyimg > div > img{
+    width:100%;
+    height: 100%;
+
+
+}
+
+#luxe{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#luxe > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#luxeimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#luxeimg > div{
+    width: 12.5%;
+    height: 200px;
+}
+
+#luxeimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#gcards{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#gcards > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+
+#gcardimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#gcardimg > div{
+    width: 25%;
+    height: 250px;
+}
+
+#gcardimg > div:nth-child(5){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(6){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(7){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(8){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(9){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(10){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(11){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(12){
+    width: 12.5%;
+    height: 250px;
+}
+
+#gcardimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#stylecast{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#stylecast > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#castimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#castimg > div{
+    width: 20%;
+    height: 250px;
+}
+
+#castimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#hertrends{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#hertrends > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#trendimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#trendimg > div{
+    width: 12.5%;
+    height: 250px;
+}
+
+#trendimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#himtrends{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#himtrends > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#trendimghim{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#trendimghim > div{
+    width: 12.5%;
+    height: 250px;
+}
+
+#trendimghim > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#kidwear{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#kidwear > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#kidimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#kidimg > div{
+    width: 20%;
+    height: 250px;
+}
+
+#kidimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
