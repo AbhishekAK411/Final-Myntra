@@ -7,7 +7,7 @@
 
 #screen{
     width: 100%;
-    height: 10000px;
+    height: 12000px;
     /* border: 2px solid black; */
 }
 
@@ -484,5 +484,221 @@
     height: 100%;
 }
 
+#topbrand{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
 
+#topbrand > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#topbrandimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#topbrandimg > div{
+    width: 12.5%;
+    height: 210px;
+}
+
+#topbrandimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#ocassion{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#ocassion > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#occimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#occimg > div{
+    width: 25%;
+    height: 240px;
+}
+
+#occimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#beauty{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#beauty > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#beautyimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#beautyimg > div{
+    width: 25%;
+    height: 240px;
+}
+
+#beautyimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#miss{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#miss > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#missimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#missimg > div{
+    width: 12.5%;
+    height: 250px;
+}
+
+#missimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#color{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#color > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#colorimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#colorimg > div{
+    width: 25%;
+    height: 240px;
+}
+
+#colorimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#influencer{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#influencer > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#infimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#infimg > div{
+    width: 16.67%;
+    height: 180px;
+}
+
+#infimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#budget{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#budget >h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#budgetimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#budgetimg > div{
+    width: 12.5%;
+    height: 220px;
+}
+
+#budgetimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#outfit{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#outfit > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#outfitimg{
+    display: flex;
+    width: 100%;
+}
+
+#outfitimg > div{
+    width: 12.5%;
+    height: 240px;
+}
+
+#outfitimg > div > img{
+    width: 100%;
+    height: 100%;
+}
 
