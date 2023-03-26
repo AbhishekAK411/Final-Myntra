@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#screen{
+    width: 100%;
+    height: 1000px;
+    border: 1px solid red;
+}
+
+#navbar{
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar > div:nth-child(1){
+    width: 28%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+
+#navbar > div:nth-child(1) > div:nth-child(1){
+    width: 30%;
+    height: 100%;
+    margin-left: 20%;
+    /* border: 1px solid red; */
+}
+
+#navbar > div:nth-child(1) > div:nth-child(1) > img{
+    width: 100%;
+    height: 100%;
+}
+
+#navbar > div:nth-child(2){
+    width: 28%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+#navbar > div:nth-child(2) > div{
+    /* border: 1px solid red; */
+    margin-top: 7%;
+}
+
+#navbar > div:nth-child(2) > div > ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar > div:nth-child(2) > div > ul > li:nth-child(1), li:nth-child(3), li:nth-child(5){
+    letter-spacing: 4px;
+    font-size: 0.8em;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+
+#navbar > div:nth-child(2) > div > ul > li:nth-child(1){
+    color: rgb(32,189,153);
+    border-bottom: 1px solid rgb(32,189,153);
+}
+
+#navbar > div:nth-child(2) > div > ul > li:nth-child(2), li:nth-child(4){
+    margin-left: 2px;
+    margin-right: 3px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+
+#navbar > div:nth-child(3){
+    width: 28%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+#navbar > div:nth-child(3) > div:nth-child(1){
+    display: flex;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+#navbar > div:nth-child(3) > div:nth-child(1) > img{
+    width: 30px;
+    height: 35px;
+}
+
+#navbar > div:nth-child(3) > div:nth-child(1) > p{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 0.8em;
+    color: rgb(63,63,63);
+}
+
+#content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+
+#content > div:nth-child(1){
+    width: 45%;
+    height: 100%;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+
+#content > div:nth-child(2){
+    width: 30%;
+    height: 100%;
+    margin-right: 10%;
+    border: 1px solid black;
+}
+
+
+#box1{
+    border: 1px solid lightgray;
+    width: 95%;
+    margin: auto;
+    margin-top: 3%;
+    height: 70px;
+}
+
+#box1 > div{
+    display: flex;
+}
+
+#box1 > div > p{
+    border: 1px solid yellow;
+    margin-top: 20px;
+}
+
+
+
