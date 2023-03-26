@@ -119,6 +119,7 @@
     width: 49%;
     height: 480px;
     /* border: 1px solid red; */
+    overflow: hidden;
     
 }
 
@@ -128,8 +129,9 @@
 }
 
 #product-content > div:nth-child(1) > div > img:hover{
-    scale: 0.9;
+    scale: 1.25;
     transition: 1s;
+    
 }
 
 #product-content > div:nth-child(2){
