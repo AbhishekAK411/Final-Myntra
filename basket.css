@@ -107,7 +107,7 @@
 }
 
 #content > div:nth-child(1){
-    width: 45%;
+    width: 55%;
     height: 100%;
     margin-left: 10%;
     /* border: 1px solid black; */
@@ -138,13 +138,13 @@
 
 #box1 > div > div:nth-child(2){
     /* border: 1px solid yellow; */
-    margin-left: 190px;
+    margin-left: 300px;
     margin-top: 12px;
 }
 #box1 > div > div:nth-child(2) > button{
     width: 130px;
     height: 40px;
-    border: 2px solid rgb(255,79,120);
+    border: 1px solid rgb(255,79,120);
     outline: none;
     background-color: white;
     color: rgb(255,79,120);
@@ -264,8 +264,8 @@
 
 #no-box > div > div:nth-child(2){
     border-right: 1px solid lightgray;
-    width: 70px;
-    margin-left: 28%;
+    width: 60px;
+    margin-left: 40%;
     margin-top: 0.3%;
 }
 
@@ -401,11 +401,11 @@
 
 #item > div > div:nth-child(3){
     /* border: 1px solid red; */
-    margin-left: 32%;
+    margin-left: 40%;
 }
 
 #item > div > div:nth-child(3) > i{
-    scale: 1;
+    scale: 1.2;
     color: rgb(63, 63, 63);
 }
 
@@ -447,7 +447,7 @@
 
 #box4 > div > div:nth-child(3){
     /* border: 1px solid red; */
-    margin-left: 5%;
+    margin-left: 15%;
     margin-top: 4%;
 }
 
@@ -467,3 +467,79 @@
     margin-right: 10%;
     border-left: 1px solid lightgray;
 }
+
+#rbox1{
+    width: 85%;
+    height: 120px;
+    border-bottom: 1px solid lightgray;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+#rbox1 > div > div:nth-child(1){
+    /* border: 1px solid yellow; */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#rbox1 > div > div:nth-child(1) > p{
+    font-family: 'Assistant', Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+}
+
+#rbox1 > div > div:nth-child(2){
+    margin-top: 15px;
+    display: flex;
+    margin-left: 10px;
+}
+
+#rbox1 > div > div:nth-child(2) > div:nth-child(1) >i{
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+#rbox1 > div > div:nth-child(2) > div:nth-child(2) > p{
+    font-family: 'Assistant', Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+    margin-top: 2px;
+    margin-right: 100px ;
+}
+
+#rbox1 > div > div:nth-child(2) > div:nth-child(3) > button{
+    width: 60px;
+    height: 28px;
+    border: 1px solid rgb(255,79,120);
+    outline: none;
+    background-color: white;
+    color: rgb(255,79,120);
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: 800;
+}
+
+#rbox1 > div > div:nth-child(2) > div:nth-child(3) > button:hover{
+    background-color: rgb(255, 238, 242);
+}
+
+#rbox1 > div > div:nth-child(3){
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    margin-left: 34px;
+}
+
+#rbox1 > div > div:nth-child(3) > p{
+    font-size: 0.8em;
+    color: rgb(63, 63, 63);
+    font-family: 'Assistant', Arial, Helvetica, sans-serif;
+
+}
+
+#rbox1 > div > div:nth-child(3) > p > span{
+    color: rgb(255,79,120);
+    font-weight: bold;
+}
+
