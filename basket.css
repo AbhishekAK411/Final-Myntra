@@ -7,7 +7,7 @@
 #screen{
     width: 100%;
     height: 1000px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #navbar{
@@ -102,7 +102,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-around;
 }
 
@@ -543,3 +543,128 @@
     font-weight: bold;
 }
 
+#rbox2{
+    width: 88%;
+    height: 140px;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+#rbox2 > div{
+    border-bottom: 1px solid lightgray;
+    margin-top: 5%;
+    margin-left: 10px;
+    
+}
+
+#rbox2 > div > div:nth-child(1){
+    /* border: 1px solid yellow; */
+    margin-left: 4%;
+}
+
+#rbox2 > div > div:nth-child(1) > p{
+    font-family: 'Assistant', Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+}
+
+#rbox2 > div > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+#rbox2 > div > div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+#rbox2 > div > div:nth-child(3) > p:nth-child(2){
+    color: rgb(3,166,133);
+
+}
+
+#rbox2 > div > div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+#rbox2 > div > div:nth-child(4) > p:nth-child(2){
+    color: rgb(255,79,120);
+}
+
+#rbox2 > div > div:nth-child(5){
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+#rbox2 > div > div:nth-child(5) > p > span{
+    color: rgb(255,79,120);
+}
+
+#rbox2 > div > div:nth-child(5) > p:nth-child(2){
+    color: rgb(3,166,133);
+}
+
+#rbox2 > div > div:nth-child(5) > p:nth-child(2) > s{
+    color: black;
+}
+
+#rbox2 > div > div{
+    margin-bottom: 2%;
+}
+
+#rbox3{
+    width: 88%;
+    height: 140px;
+    /* border: 1px solid red; */
+}
+
+#rbox3 > div{
+    /* border-bottom: 1px solid lightgray; */
+    margin-top: 5%;
+    margin-left: 10px;
+    
+}
+
+#rbox3 > div > div:nth-child(1){
+    margin-left: 4%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#rbox3 > div > div:nth-child(1) > p{
+    font-weight: 600;
+    font-size: 0.9em;
+    font-family: 'Assistant', Arial, Helvetica, sans-serif;
+}
+
+#rbox3 > div > div:nth-child(2){
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+#rbox3 > div > div:nth-child(2) > button{
+    width: 96%;
+    height: 100%;
+    border: 1px solid rgb(255,79,120);
+    background: rgb(255,79,120);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Assistant', Arial, Helvetica, sans-serif;
+    box-shadow: 0px 2px 10px rgb(0,0,0,0.3);
+}
+
+#rbox3 > div > div:nth-child(2) > button:hover{
+    background-color: rgb(255, 31, 83);
+    transition: 0.2s;
+}
