@@ -11,6 +11,96 @@
     /* border: 2px solid black; */
 }
 
+.screen1{
+    width: 100%;
+    height: 667px;
+    background-color: rgb(253,239,234);
+}
+
+.inner-box{
+    width: 28%;
+    height: 82%;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 15%;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-image{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+}
+
+.inner-image img{
+    width: 100%;
+}
+
+.input-area{
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.input-area1{
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area1 input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+
+
+.proceed-button{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+.proceed-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(201,107,104);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.5);
+    color: white;
+    font-size: 1.1em;
+}
+
 
 #navbar{
     width: 100%;
@@ -22,6 +112,11 @@
     background-color: white;
     display: flex;
 
+}
+
+.heading-section h4{
+    white-space: nowrap;
+    font-size: 0.85em;
 }
 
 
@@ -45,9 +140,7 @@
     /* border: 1px solid blue; */
     width: 300px;
     margin-top: 20px;
-    margin-left: 125px;
-    
-    
+    margin-left: 105px;
 }
 
 #navbar > div:nth-child(3) > input{
@@ -57,6 +150,8 @@
     outline: none;
     border-radius: 4px;
     background-color: rgb(244, 244, 244);
+    padding: 10px;
+    font-size: 1em;
 }
 
 #navbar > div:nth-child(4){
