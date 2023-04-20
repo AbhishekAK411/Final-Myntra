@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div class="screen1">
         <div id="navbar">
@@ -54,19 +56,25 @@
 
         <div class="inner-box">
             <div class="inner-image">
-                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/1/25/f5e9a029-33c3-4a92-811b-ef7917fe6d441674670210687-offer-banner-300-600x240-code-_-MYNTRA300.jpg" alt="" />
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/1/25/f5e9a029-33c3-4a92-811b-ef7917fe6d441674670210687-offer-banner-300-600x240-code-_-MYNTRA300.jpg"
+                    alt="" />
             </div>
             <div class="input-area1">
-                <h3>Login</h3>
-                <input type="text" placeholder="Enter Username" />
-                <input type="email" placeholder="Enter Email Address" />
-                <input type="password" placeholder="Enter Password" />
-                <input type="password" placeholder="Confirm Password" />
+                <form onsubmit="register(event)">
+                    <h3>Login</h3>
+                    <input id="register_username" type="text" placeholder="Enter Username" />
+                    <input id="register_email" type="email" placeholder="Enter Email Address" />
+                    <input id="register_password" type="password" placeholder="Enter Password" />
+                    <input id="register_confirmPassword" type="password" placeholder="Confirm Password" />
+                </form>
             </div>
             <div class="proceed-button">
-                <button>Proceed</button>
+                <button onclick="register(event)">Proceed</button>
             </div>
         </div>
     </div>
+
+    <script src="./myntra.js"></script>
 </body>
+
 </html>
