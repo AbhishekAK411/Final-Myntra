@@ -1,27 +1,27 @@
 function register(event){
     event.preventDefault();
 
-    var s_username = document.getElementById("register_username").value;
-    var s_email = document.getElementById("register_email").value;
-    var s_password = document.getElementById("register_password").value;
-    var s_confirmPassword = document.getElementById("register_confirmPassword").value;
+    var m_username = document.getElementById("register_username").value;
+    var m_email = document.getElementById("register_email").value;
+    var m_password = document.getElementById("register_password").value;
+    var m_confirmPassword = document.getElementById("register_confirmPassword").value;
 
-    if(s_username && s_email && s_password && s_confirmPassword){
-        if(s_password.length>=8 && s_confirmPassword>=8){
-            if(s_password == s_confirmPassword){
-                var swiggy_storage = JSON.parse(localStorage.getItem("swiggy_users")) || [];
+    if(m_username && m_email && m_password && m_confirmPassword){
+        if(m_password.length>=8 && m_confirmPassword>=8){
+            if(m_password == m_confirmPassword){
+                var myntra_storage = JSON.parse(localStorage.getItem("myntra_users")) || [];
                 var flag = false;
 
-                for(var i=0;i<swiggy_storage.length;i++){
-                    if(swiggy_storage[i].userEmail == s_email){
+                for(var i=0;i<myntra_storage.length;i++){
+                    if(myntra_storage[i].userEmail == m_email){
                         flag=true;
                     }
                 }
 
                 if(!flag){
-                    var swiggy_user_data = {userName: s_username, userEmail: s_email, userPassword: s_password, userConfirmPassword: s_confirmPassword};
-                    swiggy_storage.push(swiggy_user_data);
-                    localStorage.setItem("swiggy_users", JSON.stringify(swiggy_storage));
+                    var myntra_user_data = {userName: m_username, userEmail: m_email, userPassword: m_password, userConfirmPassword: m_confirmPassword};
+                    myntra_storage.push(myntra_user_data);
+                    localStorage.setItem("myntra_users", JSON.stringify(myntra_storage));
                 } else {
                     alert("Email already exists. Proceed to Login");
                     window.location.href = "./login.html";
@@ -41,23 +41,23 @@ function register(event){
 function login(event){
     event.preventDefault();
 
-    var s_email = document.getElementById("login_email").value;
-    var s_password = document.getElementById("login_password").value;
+    var m_email = document.getElementById("login_email").value;
+    var m_password = document.getElementById("login_password").value;
 
-    if(s_email && s_password){
-        var swiggy_storage = JSON.parse(localStorage.getItem("swiggy_users"));
+    if(m_email && m_password){
+        var myntra_storage = JSON.parse(localStorage.getItem("myntra_users"));
         var flagForCheck = false;
-        var swiggy_current_user = {};
+        var myntra_current_user = {};
 
-        for(var i=0;i<swiggy_storage.length;i++){
-            if(swiggy_storage[i].userEmail == s_email && swiggy_storage[i].userPassword == s_password){
+        for(var i=0;i<myntra_storage.length;i++){
+            if(myntra_storage[i].userEmail == m_email && myntra_storage[i].userPassword == m_password){
                 flagForCheck=true;
-                swiggy_current_user = swiggy_storage[i];
+                myntra_current_user = myntra_storage[i];
             }
         }
 
         if(flagForCheck){
-            localStorage.setItem("swiggy_current_user", JSON.stringify(swiggy_current_user));
+            localStorage.setItem("myntra_current_user", JSON.stringify(myntra_current_user));
             window.location.href = "./index.html";
         } else {
             alert("Credentials don't match");
