@@ -119,6 +119,14 @@
     font-size: 0.85em;
 }
 
+.logout_style{
+    border: none;
+    outline: none;
+    background: none;
+    scale: 1.1;
+    margin-top: 15%;
+}
+
 
 #navbar > div:nth-child(1)> img{
     width: 140px;
@@ -140,7 +148,7 @@
     /* border: 1px solid blue; */
     width: 300px;
     margin-top: 20px;
-    margin-left: 105px;
+    margin-left: 10%;
 }
 
 #navbar > div:nth-child(3) > input{
