@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add products</title>
+    <script src="addprod.js"></script>
+</head>
+<body>
+    <form onsubmit="myntra_prodData(event)">
+        <label>Product Name</label><br/>
+        <input id="myntra_prodName" type="text" placeholder="Enter name of the product" /><br/><br/>
+        <label>Product Description</label><br/>
+        <input id="myntra_prodDesc" type="text" placeholder="Enter product description" /><br/><br/>
+        <label>Product Price</label><br/>
+        <input id="myntra_prodPrice" type="number" placeholder="Enter product Price" /><br/><br/>
+        <label>Product Image</label><br/>
+        <input id="myntra_prodImg" type="text" placeholder="Enter Image URL" /><br/><br/>
+        <input type="submit" value="send data" /><br/>
+    </form>
+</body>
+</html>
