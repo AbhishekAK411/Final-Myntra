@@ -60,8 +60,8 @@
 
 
         <div id="product-content">
-            <div>
-                <div>
+            <div id="replace-image">
+                <!-- <div>
                     <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg" alt="productimg" />
                 </div>
                 <div>
@@ -75,14 +75,14 @@
                 </div>
                 <div>
                     <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg" alt="productimg" />
-                </div>
+                </div> -->
             </div>
 
 
 
 
             <div id="product-info">
-                <div>
+                <div id="replace-text">
                     <h2>Minions by Kook N Keech</h2>
                     <p>Men Purple boxy fit printed Round neck pure Cotton T-shirt</p>
                     <div>
@@ -91,7 +91,7 @@
                 </div>
                 <div id="border"></div>
                 <div id="third">
-                    <div>
+                    <div id="replace-price">
                         <h2>₹659</h2>
                         <p>MRP <s>₹1099</s></p>
                         <p>(40% off)</p>
@@ -244,5 +244,50 @@
 
 
     </div>
+
+
+    <script>
+
+        window.onload = () => {
+            var product = JSON.parse(localStorage.getItem("myntra_currentProd"));
+
+            var divToAppendImage = document.getElementById("replace-image");
+            var imageStructure = `<div>
+                    <img src="${product.m_prodImg}" alt="productimg" />
+                </div>
+                <div>
+                    <img src="${product.m_prodImg}" alt="productimg" />
+                </div>
+                <div>
+                    <img src="${product.m_prodImg}" alt="productimg" />
+                </div>
+                <div>
+                    <img src="${product.m_prodImg}" alt="productimg" />
+                </div>
+                <div>
+                    <img src="${product.m_prodImg}" alt="productimg" />
+                </div>`;
+            divToAppendImage.innerHTML = imageStructure;
+            
+            
+            var divToAppendText = document.getElementById("replace-text");
+            var textStructure = `<h2>${product.m_prodName}</h2>
+                    <p>${product.m_prodDesc}</p>
+                    <div>
+                        <button>4.2 <i class="fa-solid fa-star"></i> | 2.8K Ratings</button>
+                    </div>`;
+            
+            divToAppendText.innerHTML = textStructure;
+
+            
+            var divToAppendPrice = document.getElementById("replace-price");
+            var priceStructure = `<h2>₹${product.m_prodPrice}</h2>
+                        <p>MRP <s>₹1099</s></p>
+                        <p>(40% off)</p>`;
+            divToAppendPrice.innerHTML = priceStructure;
+
+        }
+
+    </script>
 </body>
 </html>
