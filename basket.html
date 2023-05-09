@@ -204,5 +204,53 @@
 
 
     </div>
+
+
+    <script>
+        window.onload = () => {
+            var myntra_currentUser = JSON.parse(localStorage.getItem("myntra_current_user"));
+            var myntra_userData = JSON.parse(localStorage.getItem("myntra_users"));
+            var divToAppendproduct = document.getElementById("item");
+            var products;
+
+            for(var i=0;i<myntra_userData.length;i++){
+                if(myntra_currentUser.userEmail == myntra_userData[i].userEmail){
+                    products = myntra_userData[i].cartProducts;
+                }
+            }
+
+            var finalData = "";
+
+            for(var i=0;i<products.length;i++){
+                finalData += `<div>
+                        <div>
+                            <input type="checkbox" id="check" checked>
+                            <img src="${products[i].m_prodImg}" alt="" />
+                        </div>
+                        <div>
+                            <h4>${products[i].m_prodName}</h4>
+                            <p>${products[i].m_prodDesc}</p>
+                            <span>Sold by: Westbury Holdings PvtLtd_Madura</span>
+                            <div>
+                                <button>Size: L<i class="fa-solid fa-chevron-down"></i></button>
+                                <button>Qty: 1<i class="fa-solid fa-chevron-down"></i></button>
+                            </div>
+                            <div>
+                                <p><b>₹${products[i].m_prodPrice}</b> <s>₹1899</s> <span>45% OFF</span></p>
+                            </div>
+                            <div id="return">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <p><b>14 Days</b> return available</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>`;
+            }
+
+            divToAppendproduct.innerHTML = finalData;
+        }
+    </script>
 </body>
 </html>

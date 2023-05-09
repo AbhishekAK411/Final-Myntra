@@ -47,9 +47,9 @@
                     <i class="fa-regular fa-heart"></i>
                     <h5>Wishlist</h5>
                 </div>
-                <div>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <h5>Bag</h5>
+                <div id="replace-cart">
+                    <!-- <i class="fa-solid fa-bag-shopping"></i>
+                    <h5>Bag</h5> -->
                 </div>
             </div>
         </div>
@@ -115,13 +115,12 @@
                     </div>
                 </div>
                 <div id="cart">
-                    <div>
-                        
+                    <!-- <div>
                         <button><i class="fa-solid fa-bag-shopping"></i> Add to Bag</button>
                     </div>
                     <div>
                         <button>Wishlist</button>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="border"></div>
                 <div id="delivery">
@@ -286,6 +285,45 @@
                         <p>(40% off)</p>`;
             divToAppendPrice.innerHTML = priceStructure;
 
+
+
+            var cartButtonDiv = document.getElementById("cart");
+            var buttonStructure = `<div>
+                        <button onclick='addToCart(${JSON.stringify(product)})'><i class="fa-solid fa-bag-shopping"></i> Add to Bag</button>
+                    </div>
+                    <div>
+                        <button>Wishlist</button>
+                    </div>`;
+
+            cartButtonDiv.innerHTML = buttonStructure;
+
+
+            var divToReplaceBag = document.getElementById("replace-cart");
+            var bagStructure = `<i class="fa-solid fa-bag-shopping"></i>
+                    <h5 onclick='redirectToCart()'>Bag</h5>`;
+            divToReplaceBag.innerHTML = bagStructure;
+
+        }
+
+        function addToCart(product){
+            var myntra_currentUser = JSON.parse(localStorage.getItem("myntra_current_user"));
+            var myntra_userData = JSON.parse(localStorage.getItem("myntra_users"));
+
+            for(var i=0;i<myntra_userData.length;i++){
+                if(myntra_currentUser.userEmail == myntra_userData[i].userEmail){
+                    if(myntra_userData[i].cartProducts == undefined){
+                        myntra_userData[i].cartProducts = [product];
+                    } else {
+                        myntra_userData[i].cartProducts.push(product);
+                    }
+                    alert("Product Added To Cart");
+                }
+            }
+            localStorage.setItem("myntra_users", JSON.stringify(myntra_userData));
+        }
+
+        function redirectToCart(){
+            window.location.href = `./basket.html`;
         }
 
     </script>
